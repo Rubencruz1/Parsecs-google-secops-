@@ -176,11 +176,11 @@ metadata.vendor_name         = "Sophos"
 metadata.product_name        = "Sophos Firewall"
 metadata.description         = "Sophos Content Filtering Application Denied"
 
-principal.ip                 = "172.16.13.155"
+principal.ip                 = "10.0.1.100"
 principal.port               = 52898
-principal.mac                = "ce:00:28:7a:c7:9e"
+principal.mac                = "xx:xx:xx:xx:xx:xx"
 
-target.ip                    = "172.64.41.3"
+target.ip                    = "8.8.8.8"
 target.port                  = 443
 target.application           = "WARP"
 target.location.country_or_region = "USA"
@@ -188,8 +188,8 @@ target.location.country_or_region = "USA"
 network.ip_protocol          = "TCP"
 network.application_protocol = "HTTPS"
 
-intermediary.hostname        = "PasadenaFirewall"
-intermediary.asset.asset_id  = "ID:X33010YXBYB2Y83"
+intermediary.hostname        = "[COMPANY]-Firewall"
+intermediary.asset.asset_id  = "ID:XXXXXXXXXXXX"
 
 security_result.action       = "BLOCK"
 security_result.rule_name    = "USUARIOS-TO-INTERNET"
@@ -211,8 +211,8 @@ Ver `docs/TROUBLESHOOTING.md` para errores comunes.
 
 ## 🏢 Entorno
 
-- **Firewall:** Sophos XGS3300 (PasadenaFirewall)
-- **Serial:** X33010YXBYB2Y83
-- **Collector:** FW-LIN-BOG-PAS
-- **Namespace:** [LinkTIC]
-- **EC2:** Ec2Wazuh (Wazuh + Bindplane)
+- **Firewall:** Sophos XGS3300 ([COMPANY]-Firewall)
+- **Serial:** XXXXXXXXXXXX
+- **Collector:** [COMPANY]-COLLECTOR
+- **Namespace:** [COMPANY-NAMESPACE]
+- **EC2:** [COMPANY]-Wazuh (Wazuh + Bindplane)

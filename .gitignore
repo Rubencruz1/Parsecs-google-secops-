@@ -1,68 +1,287 @@
-# Información sensible - No subir
+# ========================================
+# INFORMACIÓN SENSIBLE - NO SUBIR
+# ========================================
+
+# Variables de entorno
 .env
 .env.local
+.env.*.local
+.env.production.local
+.env.staging.local
 *.env
 config.local.*
 secrets/
 credentials/
+.env*
+!.env.example
+!.env.sample
 
-# IPs y direcciones
+# IPs y direcciones de red
 *.ip
 ip_list.txt
+ip_*.txt
 network_config.txt
+network_*.txt
+hosts.txt
+ips_*.txt
+subnet_*.txt
 
-# Claves y tokens
+# Claves criptográficas y certificados
 *.key
 *.pem
 *.crt
 *.pfx
+*.p12
+*.p8
+*.pub
+*.der
+*.jks
+*.keystore
 .ssh/
-id_rsa
-id_rsa.pub
-api_keys.txt
-tokens.txt
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+known_hosts
+authorized_keys
 
-# Información de la compañía
+# Tokens y API Keys
+api_keys.txt
+api_key*.txt
+tokens.txt
+token*.txt
+access_token*
+refresh_token*
+bearer_token*
+jwt_token*
+auth_token*
+api_secret*
+secret_key*
+private_key*
+oauth_token*
+github_token*
+gitlab_token*
+bitbucket_token*
+slack_token*
+aws_secret*
+gcp_key*
+azure_key*
+
+# Información de la compañía y clientes
 company_info.txt
+client_*.txt
+customer_*.txt
+company_*.txt
 internal_docs/
 *.docx
 *.xlsx
+*.xls
 *.pdf
+*.ppt
+*.pptx
+confidential/
+internal/
+private/
 
-# LinkTic específico
+# LinkTic / Información sensible de proveedores
+linktick_*
+linktic_*
 linktick_creds.txt
 linktick_config.*
 linktic_*.conf
+linktick_api*
+linktic_token*
+vendor_*
+provider_*
+supplier_*
+partner_*
 
 # Contraseñas y credenciales
 password*.txt
 pass.txt
+passwd.txt
+pwd.txt
 creds.txt
+credentials.txt
 credentials.json
 auth.json
+auth.config
+database_password*
+db_password*
+mysql_*
+postgres_*
+mongodb_*
+ldap_*
+ad_password*
+windows_*
 
-# Archivos temporales sensibles
+# Información de base de datos
+*.sql
+dump.sql
+backup.sql
+database_*.sql
+db_*.sql
+data_dump*
+production_data*
+live_data*
+database.conf
+db_config*
+connection_string*
+
+# Archivos de configuración con secretos
+*.conf
+config.xml
+config.json
+config.local
+settings.local
+application.yml
+application.yaml
+server.xml
+web.xml
+app.config
+
+# Certificados SSL/TLS
+*.crt
+*.cer
+*.pem
+ssl_*
+tls_*
+certificate*
+cert_*
+
+# Claves privadas de servicios
+firebase*.json
+google*.json
+aws*.json
+azure*.json
+gcp*.json
+digitalocean*
+heroku*
+stripe_*
+paypal_*
+twilio_*
+sendgrid_*
+
+# Archivos temporales y backups sensibles
 *.tmp
 *.bak
 *.backup
+*.swp
+*.swo
+*~
+*.temp
+.~*
 
-# IDE local
-.vscode/settings.json
+# IDE y editor local
+.vscode/
 .idea/
 *.swp
 *.swo
+.DS_Store
+.project
+.classpath
+.c9/
+*.sublime-project
+*.sublime-workspace
+.netbeans/
+*.iml
 
-# Logs con información sensible
+# Logs y debug
 logs/
+log/
 *.log
 debug.log
+error.log
+*.log*
+system.log
+access.log
+debug/
+tmp/
+temp/
 
-# Node modules y dependencias
+# Dependencias
 node_modules/
 venv/
 env/
+ENV/
+.venv/
+.env/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+dist/
+build/
+*.egg-info/
+.eggs/
 
-# OS
+# Caché y estado local
+.cache/
+cache/
+*.cache
+.grunt/
+.parcel-cache/
+.next/
+.nuxt/
+dist/
+.cache/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port/
+.vuepress/dist/
+
+# Sistema operativo
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+*.lnk
+desktop.ini
+
+# Información de dispositivos y hardware
+device_serial*
+device_id*
+mac_address*
+mac_*.txt
+hardware_*
+device_*
+serial_*
+
+# Información de usuario
+username_*
+user_*
+employee_*
+staff_*
+user_list*
+employee_list*
+permissions_*
+roles_*
+access_level*
+
+# Historial y registros
+.bash_history
+.zsh_history
+.history
+*.history
+command_history*
+audit_log*
+
+# Archivos de prueba con datos reales
+test_data*
+mock_data*
+sample_*
+!sample_log_*
+fixtures/
+test_fixtures/
+
+# Docker y contenedores
+.dockerignore
+docker-compose.override.yml
+.docker/
+*.dockerfile

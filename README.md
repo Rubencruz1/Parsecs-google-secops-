@@ -1,4 +1,4 @@
-# Sophos XGS Firewall → Google SecOps (Chronicle) Parser
+# Sophos XGS Firewall → Bindplanet → Google SecOps (Chronicle) Parser
 
 Parser CBN personalizado para Google SecOps que procesa logs del firewall **Sophos XGS** en formato JSON normalizado por Bindplane.
 
